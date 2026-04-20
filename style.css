@@ -336,11 +336,16 @@ body {
   }
 }
 .brand-bar {
-  margin-bottom: 24px;
+  background: #8f8f8f;
+  border-radius: 20px;
+  padding: 18px 24px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
 }
 
 .brand-logo {
-  height: 48px;
+  height: 42px;
   width: auto;
   display: block;
 }
