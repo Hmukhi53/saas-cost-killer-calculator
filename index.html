@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SaaS Cost-Killer Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <p class="eyebrow">Interactive Utility</p>
+      <h1>The SaaS Cost-Killer Calculator</h1>
+      <p class="subtext">
+        Stop overpaying for a bloated stack of tools that barely work together.
+        Compare your current monthly software costs against HighLevel and see what you could save in minutes.
+      </p>
+    </div>
+
+    <div class="layout">
+      <div class="card main-card">
+        <div class="section-header">
+          <h2>1. Select the tools you are paying for</h2>
+          <span id="selected-count" class="pill">0 selected</span>
+        </div>
+
+        <div class="tool-grid">
+          <label class="tool-item">
+            <input type="checkbox" class="tool-checkbox" data-price="10" checked />
+            <span>Calendly / Scheduling</span>
+            <strong>$10/mo</strong>
+          </label>
+
+          <label class="tool-item">
+            <input type="checkbox" class="tool-checkbox" data-price="60" checked />
+            <span>Klaviyo / Email Marketing</span>
+            <strong>$60/mo</strong>
+          </label>
+
+          <label class="tool-item">
+            <input type="checkbox" class="tool-checkbox" data-price="97" checked />
+            <span>ClickFunnels / Funnels</span>
+            <strong>$97/mo</strong>
+          </label>
+
+          <label class="tool-item">
+            <input type="checkbox" class="tool-checkbox" data-price="20" />
+            <span>Mailchimp</span>
+            <strong>$20/mo</strong>
+          </label>
+
+          <label class="tool-item">
+            <input type="checkbox" class="tool-checkbox" data-price="49" />
+            <span>ActiveCampaign</span>
+            <strong>$49/mo</strong>
+          </label>
+
+          <label class="tool-item">
+            <input type="checkbox" class="tool-checkbox" data-price="29" />
+            <span>Zapier / Integrations</span>
+            <strong>$29/mo</strong>
+          </label>
+
+          <label class="tool-item">
+            <input type="checkbox" class="tool-checkbox" data-price="29" />
+            <span>CRM / Pipeline Add-on</span>
+            <strong>$29/mo</strong>
+          </label>
+
+          <label class="tool-item">
+            <input type="checkbox" class="tool-checkbox" data-price="45" />
+            <span>Call Tracking</span>
+            <strong>$45/mo</strong>
+          </label>
+
+          <label class="tool-item">
+            <input type="checkbox" class="tool-checkbox" data-price="30" />
+            <span>Reputation Management</span>
+            <strong>$30/mo</strong>
+          </label>
+
+          <label class="tool-item">
+            <input type="checkbox" class="tool-checkbox" data-price="25" />
+            <span>Forms / Surveys</span>
+            <strong>$25/mo</strong>
+          </label>
+
+          <label class="tool-item">
+            <input type="checkbox" class="tool-checkbox" data-price="25" />
+            <span>SMS Platform</span>
+            <strong>$25/mo</strong>
+          </label>
+
+          <label class="tool-item">
+            <input type="checkbox" class="tool-checkbox" data-price="15" />
+            <span>Live Chat Widget</span>
+            <strong>$15/mo</strong>
+          </label>
+        </div>
+
+        <div class="settings-grid">
+          <div class="setting-box">
+            <h3>2. Pick your HighLevel plan</h3>
+            <label class="plan-option">
+              <input type="radio" name="ghl-plan" value="97" checked />
+              <span>HighLevel Starter - $97/month</span>
+            </label>
+            <label class="plan-option">
+              <input type="radio" name="ghl-plan" value="297" />
+              <span>HighLevel Unlimited - $297/month</span>
+            </label>
+          </div>
+
+          <div class="setting-box">
+            <h3>3. Monthly time loss</h3>
+            <label for="hoursLost">Hours lost switching between tools</label>
+            <input type="range" id="hoursLost" min="0" max="40" value="8" />
+            <p><span id="hoursLostValue">8</span> hours/month</p>
+
+            <label for="hourlyRate">Hourly value of your time</label>
+            <input type="range" id="hourlyRate" min="5" max="200" step="5" value="25" />
+            <p><span id="hourlyRateValue">$25</span>/hour</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card summary-card">
+        <h2>Your savings snapshot</h2>
+
+        <div class="summary-box">
+          <p>Current tool stack</p>
+          <h3 id="stackCost">$0</h3>
+        </div>
+
+        <div class="summary-box">
+          <p>Estimated time waste</p>
+          <h3 id="timeWaste">$0</h3>
+        </div>
+
+        <div class="summary-box">
+          <p>Bloated stack total</p>
+          <h3 id="bloatedTotal">$0</h3>
+        </div>
+
+        <div class="summary-box highlight">
+          <p>HighLevel cost</p>
+          <h3 id="ghlCost">$97</h3>
+        </div>
+
+        <div class="summary-box outline">
+          <p>Estimated monthly savings</p>
+          <h3 id="monthlySavings">$0</h3>
+          <small>Projected annual savings: <span id="annualSavings">$0</span></small>
+        </div>
+
+        <div class="cta-box">
+          <p class="mini-title">Next Step</p>
+          <p>Want help replacing your messy stack with one system?</p>
+          <button>Get My Savings Breakdown</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
