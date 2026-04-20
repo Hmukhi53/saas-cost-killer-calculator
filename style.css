@@ -40,11 +40,11 @@ body {
 
 .hero h1 {
   margin: 0 0 18px;
-  font-size: 56px;
-  line-height: 1.05;
+  font-size: 50px;
+  line-height: 1.08;
   font-weight: 800;
   color: #ed1c24;
-  max-width: 760px;
+  max-width: 900px;
 }
 
 .subtext {
@@ -338,14 +338,14 @@ body {
 .brand-bar {
   background: #8f8f8f;
   border-radius: 20px;
-  padding: 18px 24px;
-  margin-bottom: 28px;
+  padding: 14px 24px;
+  margin-bottom: 34px;
   display: flex;
   align-items: center;
 }
 
 .brand-logo {
-  height: 42px;
+  height: 34px;
   width: auto;
   display: block;
 }
